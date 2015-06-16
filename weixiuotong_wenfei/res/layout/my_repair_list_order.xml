@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#cacaca"
+    android:layout_height="64dp" 
+    
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/orderList"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+        
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_marginTop="14dp"
+            android:singleLine="true"
+            android:text="单号:"
+            android:textColor="#2d9abd"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:singleLine="true"
+            android:text="00000001"
+            android:textColor="#2d9abd"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="9dp"
+            
+            android:singleLine="true"
+            android:text="我的电脑坏了"
+            android:textColor="#262528"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        
+         <Button
+            android:id="@+id/button1"
+            android:layout_width="9.8dp"
+            android:layout_height="13.8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/right_enter" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="9dp"
+             android:layout_toLeftOf="@+id/button1"
+             android:singleLine="true"
+             android:text="2012/3/3 12:23:32"
+             android:textColor="#767676"
+             android:textSize="10.5sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

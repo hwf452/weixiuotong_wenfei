@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weixiuotong.wenfei.activity"
+    android:versionCode="4"
+    android:versionName="4.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.weixiuotong.wenfei.activity.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weixiuotong.wenfei.user_activity.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weixiuotong.wenfei.user_activity.RegistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.weixiuotong.wenfei.user_activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.weixiuotong.wenfei.activity.LOGINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weixiuotong.wenfei.user_activity.LosspwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.weixiuotong.wenfei.user_activity.AgreeItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="Select_Community_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="Modify_PrivateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="Repair_Detail_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Edit_RepairOrder_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Event_progress_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="AddCommunityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Repair_Order_Already_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Private_Imformation_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="About_Me_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="My_Repair_Order_Repair_Now"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="My_Repair_Order_Repair_Refuse_Status"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="My_Repair_Order_Repair_Wait_Sure"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="My_Repair_Order_Repair_AllReady_End"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Submit_ShowPicture_Activity"
+            >
+        </activity>
+        <activity
+            android:name="Modify_Nickname_Activity"
+           >
+        </activity>
+        <activity
+            android:name="Modify_Address_Activity"
+            >
+        </activity>
+        <activity
+            android:name="Modify_Mobile_Bind"
+            >
+        </activity>
+        <activity
+            android:name="Order_Detail_Show_Content"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="Modify_PassWrod" >
+        </activity>
+    </application>
+
+</manifest>

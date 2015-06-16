@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cacaca" >
+
+    <RelativeLayout
+        
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/regist_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/all_return"
+            android:textColor="#eeeeee"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/repair_order"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#efefef"
+        android:overScrollMode="always" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+    
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@drawable/order_status04_bg" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18.6dp"
+        android:text="@string/order_number1"
+        android:textColor="#262528"
+        android:textSize="14.4sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text=""
+        android:textColor="#262528"
+        android:textSize="14.4sp" />
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/repait_detail_status_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/repair_detail_tv_title"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:inputType="none"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textSize="12sp"
+                
+                android:textStyle="bold"
+                android:enabled="false"
+                android:focusable="false">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/device_submit"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/community_1"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:inputType="none"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:enabled="false"
+                android:focusable="false"
+                android:textColor="#000000"
+                android:textSize="12sp" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/name"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textStyle="bold" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/phone_number2"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:focusable="false"
+                android:textStyle="bold">
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/address1"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:focusable="false"
+                android:textStyle="bold">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/repair_detail_tv_content"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"
+                 />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.70"
+                android:focusable="false"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="9.8dp"
+                android:layout_height="13.8dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/right_enter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="@string/repair_detail_photo"
+                android:textColor="#7f7f7f"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+             <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="44.5dp"
+                android:layout_height="44.5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/picId1"
+                
+                android:src="@drawable/repair_detail_show" />
+            <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="44.5dp"
+                	android:layout_height="44.5dp"
+                	android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="44.5dp"
+                android:layout_height="44.5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/picId2"
+                android:src="@drawable/repair_detail_show" />
+            <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="44.5dp"
+                	android:layout_height="44.5dp"
+                	android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="44.5dp"
+                android:layout_height="44.5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/picId3"
+                android:src="@drawable/repair_detail_show" />
+            <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="44.5dp"
+                	android:layout_height="44.5dp"
+                	android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="44.5dp"
+                android:layout_height="44.5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/picId4"
+                android:src="@drawable/repair_detail_show" />
+            <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="44.5dp"
+                	android:layout_height="44.5dp"
+                	android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="44.5dp"
+                android:layout_height="44.5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/picId5"
+                android:src="@drawable/repair_detail_show" />
+            <ProgressBar
+                    android:id="@+id/progressBar5"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="44.5dp"
+                	android:layout_height="44.5dp"
+                	android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear3"
+        android:layout_alignRight="@+id/linear3"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/regist_button_sumit"
+        android:text="@string/progress_status"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

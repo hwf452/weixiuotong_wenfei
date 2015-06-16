@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="titleBar_title">#ffffff</item>
+    <item type="drawable" name="white">#ffffff</item>
+    <item type="drawable" name="black">#000000</item>
+    <item type="drawable" name="category_background">#ffadb2ad</item>
+    <item type="drawable" name="order_color">#ffff00ff</item>
+    <item type="drawable" name="black_ground1">#cacaca</item>
+    <item type="drawable" name="black_ground2">#00ffff</item>
+	 <color name="RoyalBlue">#B0C4DE</color>
+   
+ <color name="LightSteelBlue">#B0C4DE</color>
+</resources>

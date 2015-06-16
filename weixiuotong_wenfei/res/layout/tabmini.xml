@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:background="@drawable/titlebar" >
+
+    <TextView
+        android:id="@+id/tab_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/main_one"
+        android:text="@string/sumit_repair_order"
+        />
+    
+    	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/main_two"
+        android:text="@string/remider_value"
+        />
+    
+    <TextView
+        android:id="@+id/tab_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/main_three"
+        android:text="@string/my_repair_order"
+         />
+    
+    <TextView
+        android:id="@+id/tab_label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/main_four"
+        android:text="@string/more_value"
+        />
+
+</LinearLayout>

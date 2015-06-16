@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_repair_order_status">
+        <item>待审核</item>
+        <item>维修中</item>
+        <item>被拒绝</item>
+        <item>待确认</item>
+        <item>已结束</item>
+        
+        
+    </string-array>
+    
+</resources>
